@@ -24,7 +24,7 @@ class RestHandler
     /**
      * Construct
      *
-     * @param \Forte\Api\Authentication $apiContext
+     * @param Shoukhin\Forte\Api\Authentication $apiContext
      */
     public function __construct($apiContext)
     {
@@ -79,7 +79,7 @@ class RestHandler
      * @param array $config
      *
      * @return string
-     * @throws \Forte\Exception\ForteConfigurationException
+     * @throws Shoukhin\Forte\Exception\ForteConfigurationException
      */
     private function _getEndpoint($config)
     {

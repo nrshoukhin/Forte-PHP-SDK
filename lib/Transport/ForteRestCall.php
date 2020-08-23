@@ -37,7 +37,7 @@ class ForteRestCall
      * @param string $data     Request payload
      * @param array  $headers  HTTP headers
      * @return mixed
-     * @throws \Forte\Exception\ForteConnectionException
+     * @throws Shoukhin\Forte\Exception\ForteConnectionException
      */
     public function execute($handlers = array(), $path, $method, $data = '', $headers = array())
     {

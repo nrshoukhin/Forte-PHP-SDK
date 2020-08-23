@@ -12,7 +12,7 @@ use Shoukhin\Forte\Transport\ForteRestCall;
 class ForteResourceModel extends ForteModel
 {
 
-    protected static function executeCall($url, $method, $payLoad, $headers = array(), $apiContext = null, $restCall = null, $handlers = array('Forte\Handler\RestHandler'))
+    protected static function executeCall($url, $method, $payLoad, $headers = array(), $apiContext = null, $restCall = null, $handlers = array('Shoukhin\Forte\Handler\RestHandler'))
     {
         //Initialize the context and rest call object if not provided explicitly
         $restCall = $restCall ? $restCall : new ForteRestCall($apiContext);

@@ -56,7 +56,7 @@ class ForteLoggingManager
     {
         $config = ForteConfigManager::getInstance()->getConfigHashmap();
         // Checks if custom factory defined, and is it an implementation of @ForteLogFactory
-        $factory = array_key_exists('log.AdapterFactory', $config) && in_array('Forte\Log\ForteLogFactory', class_implements($config['log.AdapterFactory'])) ? $config['log.AdapterFactory'] : '\Forte\Log\ForteDefaultLogFactory';
+        $factory = array_key_exists('log.AdapterFactory', $config) && in_array('Shoukhin\Forte\Log\ForteLogFactory', class_implements($config['log.AdapterFactory'])) ? $config['log.AdapterFactory'] : '\Shoukhin\Forte\Log\ForteDefaultLogFactory';
         /** @var ForteLogFactory $factoryInstance */
         $factoryInstance = new $factory();
         $this->logger = $factoryInstance->getLogger($loggerName);

@@ -9,7 +9,7 @@ use Psr\Log\LoggerInterface;
  *
  * This factory is the default implementation of Log factory.
  *
- * @package Forte\Log
+ * @package Shoukhin\Forte\Log
  */
 class ForteDefaultLogFactory implements ForteLogFactory
 {
