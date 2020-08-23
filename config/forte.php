@@ -7,7 +7,7 @@ return [
 
     'mode'  =>  'provide_mode', //live or sandbox
     
-    'org_id' => 'provide_the_forte_organization_key',
+    'org_id' => 'provide_the_forte_organization_id',
 
     'loc_id' => 'provide_the_forte_location_id'
 ];
