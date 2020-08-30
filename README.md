@@ -51,7 +51,7 @@ return [
 ```
 
 ## Usages
-Here provide an example to get all customer of an organization in your PHP project (Except Laravel).
+Here provide an example to get all customer of an organization in your PHP project (Except Laravel).\
 **Note:** Include the `autoload.php` according to your project path structure. Here in provided example, I used a `index.php` file at the root of my project and the vendor folder is also located at the root of my project. So, I used `include "vendor/autoload.php";`.
 ```php
 <?php
