@@ -49,3 +49,31 @@ return [
     'loc_id' => 'provide_the_forte_location_id'
 ];
 ```
+
+## Usages
+Here provide an example to get all customer of an organization in your PHP project (Except Laravel).
+**Note:** Include the `autoload.php` according to your project path structure. Here in provided example, I used a `index.php` file at the root of my project and the vendor folder is also located at the root of my project. So, I used `include "vendor/autoload.php";`.
+```php
+<?php
+include "vendor/autoload.php";
+use Shoukhin\Forte\Api\Authentication;
+use Shoukhin\Forte\Api\Address;
+
+$access_id = "provide your Forte access ID";
+$secret_id = "provide your Forte secret ID";
+$authentication = new Authentication( $access_id, $secret_id );
+
+$authentication->set_config(
+        array(
+            "mode"   => "sandbox", //sandbox or live
+            "org_id" => "provide the organization ID",
+            "loc_id" => "provide the location ID"
+        )
+);
+
+$forte = new Customer($authentication);
+$customer = $forte->getCustomerOfOrganization();
+echo "<pre>";
+var_dump( $customer );
+?>
+```
