@@ -51,8 +51,8 @@ return [
 ```
 
 ## Usages
-Here provide an example to get all customer of an organization in your PHP project (Except Laravel).\
-**Note:** Include the `autoload.php` according to your project path structure. Here in provided example, I used a `index.php` file at the root of my project and the vendor folder is also located at the root of my project. So, I used `include "vendor/autoload.php";`.
+Here, providing an example to get all customer(s) of an organization in your PHP project.\
+**Note:** Include the `autoload.php` according to your project path structure.
 ```php
 <?php
 include "vendor/autoload.php";
@@ -76,4 +76,27 @@ $customer = $forte->getCustomerOfOrganization();
 echo "<pre>";
 var_dump( $customer );
 ?>
+```
+
+### For Laravel Usage
+
+For an Example, Using a controller named `ForteController` to collect all customer(s) of an organization. 
+ 
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Shoukhin\Forte\Facades\Forte;
+
+class ForteController extends Controller
+{
+    public function getAllCustomers(){
+        $data = Forte::Customer()->getCustomerOfOrganization();
+        echo "<pre>";
+        var_dump( $data );
+        return;
+    }
+}
 ```
