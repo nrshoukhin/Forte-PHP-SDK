@@ -103,4 +103,4 @@ class ForteController extends Controller
 
 ## SDK Documentation
 
-[Click Here](https://nrshoukhin.github.io/Forte-PHP-SDK/) to see the documentation of this SDK.
+[Click Here](https://nrshoukhin.github.io/Forte-PHP-SDK/){:target="_blank"} to see the documentation of this SDK.
