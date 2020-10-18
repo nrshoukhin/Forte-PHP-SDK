@@ -80,7 +80,7 @@ var_dump( $customer );
 
 ### For Laravel Usage
 
-For an Example, Using a controller named `ForteController` to collect all customer(s) of an organization. 
+For an Example, Using a controller named `ForteController` to collect all customer(s) of an organization.
  
 ```php
 <?php
@@ -100,3 +100,7 @@ class ForteController extends Controller
     }
 }
 ```
+
+## SDK Documentation
+
+[Click Here](https://nrshoukhin.github.io/Forte-PHP-SDK/) to see the documentation of this SDK.
