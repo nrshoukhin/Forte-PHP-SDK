@@ -57,7 +57,7 @@ Here, providing an example to get all customer(s) of an organization in your PHP
 <?php
 include "vendor/autoload.php";
 use Shoukhin\Forte\Api\Authentication;
-use Shoukhin\Forte\Api\Address;
+use Shoukhin\Forte\Api\Customer;
 
 $access_id = "provide your Forte access ID";
 $secret_id = "provide your Forte secret ID";
